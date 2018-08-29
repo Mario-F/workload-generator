@@ -1,0 +1,30 @@
+{
+  "name": "db-load-sim",
+  "version": "0.0.1",
+  "description": "Database Workload Simulation",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha test/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Mario-F/db-load-sim.git"
+  },
+  "author": "Mario Fritschen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Mario-F/db-load-sim/issues"
+  },
+  "homepage": "https://github.com/Mario-F/db-load-sim#readme",
+  "devDependencies": {
+    "chai": "^4.1.2",
+    "mocha": "^5.2.0"
+  },
+  "dependencies": {
+    "chance": "^1.0.16",
+    "debug": "^3.1.0",
+    "lodash": "^4.17.10",
+    "mocha-logger": "^1.0.6",
+    "randexp": "^0.5.3"
+  }
+}
