@@ -2,7 +2,6 @@
   "name": "db-load-sim",
   "version": "0.0.1",
   "description": "Database Workload Simulation",
-  "main": "index.js",
   "scripts": {
     "test": "mocha test/"
   },
