@@ -14,11 +14,11 @@ describe('Products', () => {
     const acc = []
     debug('Start Masscreate')
     let i
-    for(i = 0; i < 1000; i++) {
+    for(i = 0; i < 50; i++) {
       acc.push(products.createProduct())
     }
     debug('End Masscreate')
     const used = process.memoryUsage().heapUsed / 1024 / 1024;
     done()
-  }).timeout(60000)
+  })
 })
