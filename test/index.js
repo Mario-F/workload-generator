@@ -20,6 +20,6 @@ describe('Statistics End', () => {
   it('Memory Usage', () => {
     const endMem = Math.round(process.memoryUsage().heapUsed / 1024 / 1024 * 100) / 100
     mlog.log(`${endMem} MB`)
-    expect(startMem * 2).to.be.above(endMem)
+    expect(startMem * 4).to.be.above(endMem)
   })
 })
