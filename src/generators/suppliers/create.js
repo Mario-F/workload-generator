@@ -5,5 +5,7 @@ const defaults = {
 }
 
 module.exports = function create(options) {
+  const result = {}
+
 
 }

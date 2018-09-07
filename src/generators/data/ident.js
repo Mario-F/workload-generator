@@ -9,6 +9,7 @@ const config = require('../../../config')
  */
 const storage = {
   ean: [],
+  companyAbbr: [],
 }
 
 /*
@@ -39,6 +40,21 @@ Ean.prototype.get = function() {
   return storage.ean[this.mapping]
 }
 
+/*
+ * CompanyName ident providers
+ */
+// Generates unique Company Name including unique abbreviation
+const genCompanyName = function() {
+  let result = null
+  do {
+    let name = chance.company()
+    let abbr = name.split(' ').map(v => v[0].toLowerCase()).join('')
+    if(storage.companyAbbr.indexOf(abbr) === -1) result = { name, abbr }
+  } while(!result)
+  return result
+}
+
 module.exports = {
   Ean,
+  genCompanyName,
 }
