@@ -13,7 +13,7 @@ it('Test Masscreate', (done) => {
   const acc = []
   debug('Start Masscreate')
   let i
-  for(i = 0; i < 50; i++) {
+  for(i = 0; i < 25; i++) {
     acc.push(products.createProduct())
   }
   debug('End Masscreate')
