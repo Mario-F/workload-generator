@@ -1,20 +1,20 @@
 {
-  "name": "db-load-sim",
-  "version": "0.0.1",
-  "description": "Database Workload Simulation",
+  "name": "workload-generator",
+  "version": "0.1.0",
+  "description": "Random Workload Genrator",
   "scripts": {
     "test": "mocha test/"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Mario-F/db-load-sim.git"
+    "url": "git+https://github.com/Mario-F/workload-generator.git"
   },
   "author": "Mario Fritschen",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/Mario-F/db-load-sim/issues"
+    "url": "https://github.com/Mario-F/workload-generator/issues"
   },
-  "homepage": "https://github.com/Mario-F/db-load-sim#readme",
+  "homepage": "https://github.com/Mario-F/workload-generator#readme",
   "devDependencies": {
     "chai": "^4.2.0",
     "mocha": "^8.0.1"
