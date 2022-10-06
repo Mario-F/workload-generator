@@ -1,0 +1,22 @@
+name: testing
+on: push
+jobs:
+  test:
+    runs-on: ubuntu-22.04
+    strategy:
+      matrix:
+        node:
+          - '14'
+          - '16'
+          - '18'
+    name: Node ${{ matrix.node }}
+    steps:
+      - uses: actions/checkout@v2
+      - name: Setup Node.js
+        uses: actions/setup-node@v1
+        with:
+          node-version: ${{ matrix.node }}
+      - run: yarn
+
+      - name: Execute tests
+        run: yarn test
