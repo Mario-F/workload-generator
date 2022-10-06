@@ -7,5 +7,5 @@ Simulating distributed realistic Workload for Database
 Use nodemon for test on file changes:
 
 ```shell
-nodemon -x "clear; npm run test"
+nodemon -x "clear; yarn test"
 ```
