@@ -1,5 +1,5 @@
 {
-  "name": "workload-generator",
+  "name": "@mariof/workload-generator",
   "version": "0.1.0",
   "description": "Random Workload Genrator",
   "scripts": {
@@ -9,7 +9,10 @@
     "type": "git",
     "url": "git+https://github.com/Mario-F/workload-generator.git"
   },
-  "author": "Mario Fritschen",
+  "author": {
+    "name": "Mario Fritschen",
+    "email": "github@fritschen.net"
+  },
   "license": "MIT",
   "bugs": {
     "url": "https://github.com/Mario-F/workload-generator/issues"
