@@ -11,18 +11,18 @@ debug(`Generating map with ${mapSize} random words`)
 const map = chance.unique(chance.word, mapSize)
 const mapBounds = {
   min: 0,
-  max: (map.length - 1),
+  max: map.length - 1,
 }
-debug(`Created map with ${map.length} unique words and ${map.reduce((a, i) => a+i.length, 0)} characters in total`)
+debug(`Created map with ${map.length} unique words and ${map.reduce((a, i) => a + i.length, 0)} characters in total`)
 
 /*
  * Returns functions to get random text from shared random textmap
  */
-const Text = function(min, max) {
-  this.mapping = _.range(chance.integer({ min, max })).map(_ => chance.integer(mapBounds))
+const Text = function (min, max) {
+  this.mapping = _.range(chance.integer({ min, max })).map((_) => chance.integer(mapBounds))
 }
-Text.prototype.get = function() {
-  return this.mapping.map(v => map[v]).join(' ')
+Text.prototype.get = function () {
+  return this.mapping.map((v) => map[v]).join(' ')
 }
 
 module.exports = {

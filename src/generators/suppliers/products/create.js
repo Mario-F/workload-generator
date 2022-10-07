@@ -12,11 +12,11 @@ module.exports = function create(options) {
   const opt = Object.assign({}, options, defaults)
   debug('Called Products Create with merged options:', opt)
 
-  if(!productnumberRegexCache[opt.supplier_productnumber_regex]) {
+  if (!productnumberRegexCache[opt.supplier_productnumber_regex]) {
     debug('supplier_productnumber_regex not found, create new:', opt.supplier_productnumber_regex)
     productnumberRegexCache[opt.supplier_productnumber_regex] = new RandExp(opt.supplier_productnumber_regex)
   }
-  if(!productnameRegexCache[opt.supplier_productname_regex]) {
+  if (!productnameRegexCache[opt.supplier_productname_regex]) {
     debug('supplier_productnumber_regex not found, create new:', opt.supplier_productname_regex)
     productnameRegexCache[opt.supplier_productname_regex] = new RandExp(opt.supplier_productname_regex)
   }
