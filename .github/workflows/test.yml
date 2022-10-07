@@ -18,5 +18,8 @@ jobs:
           node-version: ${{ matrix.node }}
       - run: yarn
 
+      - name: Execute lints
+        run: yarn lint
+
       - name: Execute tests
         run: yarn test
