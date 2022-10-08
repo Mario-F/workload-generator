@@ -4,7 +4,8 @@
   "description": "Random Workload Genrator",
   "scripts": {
     "lint": "eslint src/. --ext .ts --fix",
-    "test": "mocha test/"
+    "test": "mocha test/",
+    "compile": "tsc"
   },
   "repository": {
     "type": "git",
