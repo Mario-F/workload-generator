@@ -1,6 +1,6 @@
-# Database Workload Simulator [![Build Status](https://travis-ci.org/Mario-F/workload-generator.svg?branch=master)](https://travis-ci.org/Mario-F/workload-generator)
+# Workload Generator [![Build Status](https://travis-ci.org/Mario-F/workload-generator.svg?branch=master)](https://travis-ci.org/Mario-F/workload-generator)
 
-Simulating distributed realistic Workload for Database
+Generate realistic workloads out of thin air.
 
 ## Development
 
