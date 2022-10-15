@@ -1,5 +1,5 @@
-import data from './data';
-import suppliers from './suppliers';
+import data from './data'
+import suppliers from './suppliers'
 
 export default {
   data,
