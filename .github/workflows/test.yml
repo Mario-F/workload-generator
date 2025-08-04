@@ -9,6 +9,7 @@ jobs:
           - '16'
           - '18'
           - '19'
+          - '20'
     name: Node ${{ matrix.node }}
     steps:
       - uses: actions/checkout@v2
